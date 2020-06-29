@@ -1,4 +1,8 @@
 {
+    "name": "rikudou/sdate",
+    "type": "library",
+    "description": "Date function for Eternal September",
+    "license": "MIT",
     "require": {
         "php": "^7.2"
     },
