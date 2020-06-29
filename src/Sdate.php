@@ -10,8 +10,9 @@ final class Sdate
     private const DATE_FLAGS = ['d', 'j', 'S', 'z', 'L', 'o', 'y', 'Y', 'F', 'm', 'M', 'n', 't'];
 
     /**
-     * @param string $format
+     * @param string   $format
      * @param int|null $timestamp
+     *
      * @return false|string
      */
     public static function sdate(string $format, int $timestamp = null)
@@ -54,7 +55,7 @@ final class Sdate
             case 'd':
                 return sprintf('%02d', $days);
             case 'j':
-                return (string)$days;
+                return (string) $days;
             case 'S':
                 $days = (string) $days;
                 $last = substr($days, -1);

@@ -19,7 +19,7 @@
         "friendsofphp/php-cs-fixer": "^2.16"
     },
     "scripts": {
-        "fixer": "php-cs-fixer fix src",
+        "fixer": "php-cs-fixer fix src -vvv",
         "phpstan": "phpstan analyse src --level=max",
         "phpunit": "phpunit"
     }
