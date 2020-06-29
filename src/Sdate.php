@@ -5,6 +5,9 @@ namespace Rikudou\Sdate;
 use DateTime;
 use LogicException;
 
+/**
+ * @internal
+ */
 final class Sdate
 {
     private const DATE_FLAGS = ['d', 'j', 'S', 'z', 'L', 'o', 'y', 'Y', 'F', 'm', 'M', 'n', 't'];
