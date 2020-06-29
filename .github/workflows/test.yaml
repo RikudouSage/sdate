@@ -1,0 +1,38 @@
+name: Run Tests
+on: [push]
+
+jobs:
+  code_style:
+    name: Code Style
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+      - name: Install Dependencies
+        run: composer install
+      - name: Validate Code Style
+        run: composer fixer -- --dry-run
+
+  static_analysis:
+    name: Static Analysis
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+      - name: Run Static Analysis
+        uses: actions-x/phpstan@v1
+        with:
+          paths: src
+          level: max
+          useBundled: true
+
+  tests:
+    name: Run Tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+      - name: Install Dependencies
+        run: composer install
+      - name: Run PHPUnit tests
+        run: composer phpunit
