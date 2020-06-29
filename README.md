@@ -1,3 +1,5 @@
+![Tests](https://github.com/RikudouSage/sdate/workflows/Run%20Tests/badge.svg)
+
 # Eternal September date
 
 This small library calculates the date for Eternal September (aka September that never ended).
