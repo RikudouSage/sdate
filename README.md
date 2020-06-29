@@ -1,4 +1,4 @@
-![Tests](https://github.com/RikudouSage/sdate/workflows/Run%20Tests/badge.svg)
+![Tests](https://github.com/RikudouSage/sdate/workflows/Tests/badge.svg)
 
 # Eternal September date
 
