@@ -16,7 +16,7 @@ Basically it returns the date as if the September 1993 never ended, for example:
 <?php
 
 echo sdate('Y-m-d', strtotime('2020-06-01'));
-// echoes 1993-09-9771, e.g. the 9,771th day of September 1993
+// echoes 1993-09-9771, e.g. the 9,771st day of September 1993
 ```
 
 All day/month/year formats are supported, every other format is handled by the underlying date function.
